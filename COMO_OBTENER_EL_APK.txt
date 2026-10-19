@@ -1,0 +1,30 @@
+MOORTY VOICE ANDROID — CÓMO OBTENER EL INSTALADOR APK
+====================================================
+
+IMPORTANTE: este ZIP contiene el proyecto fuente y una automatización para compilar
+el APK en GitHub Actions. NO contiene todavía un APK ya compilado. La app base
+solo tiene interfaz y prueba de voz; aún no lee eventos reales de TikTok LIVE ni
+YouTube LIVE y no envía audio a OBS.
+
+PASOS PARA COMPILAR EN LA NUBE (requiere cuenta de GitHub):
+1. Entra en https://github.com/new y crea un repositorio vacío, por ejemplo
+   moorty-voice-android.
+2. Descomprime este ZIP en tu PC.
+3. Sube al repositorio TODOS los archivos y carpetas que están dentro de
+   moorty_android (incluida la carpeta oculta .github).
+4. En GitHub abre la pestaña Actions.
+5. Selecciona “Build Moorty Voice APK” y pulsa “Run workflow”.
+6. Cuando termine correctamente, abre la ejecución y baja el artefacto
+   “MoortyVoice-debug-APK”.
+7. Descomprime el artefacto y copia app-debug.apk al teléfono Android.
+8. Toca el APK para instalarlo. Si Android lo solicita, permite temporalmente
+   instalar aplicaciones desde esa fuente.
+
+Si la compilación falla, abre la ejecución de Actions y comparte el texto del
+error (sin claves ni contraseñas) para corregirlo.
+
+ESTADO DE ESTA VERSIÓN:
+- Proyecto Android nativo en Kotlin.
+- Interfaz oscura roja/negra y prueba de TextToSpeech.
+- Servicio de voz en primer plano.
+- NO es aún la versión final con conexiones reales de TikTok/YouTube.

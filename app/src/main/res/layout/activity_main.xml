@@ -1,0 +1,32 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#090909" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="22dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="MOORTY VOICE" android:textColor="#ff3030" android:textSize="28sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="ANDROID • LIVE ASSISTANT" android:textColor="#aaaaaa" android:textSize="12sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="22dp" android:text="Plataforma" android:textColor="#ffffff" android:textStyle="bold" />
+        <Spinner android:id="@+id/platformSpinner" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="6dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Cuenta TikTok" android:textColor="#ffffff" android:textStyle="bold" />
+        <Spinner android:id="@+id/accountSpinner" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="6dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp" android:text="Eventos que querés anunciar" android:textColor="#ffffff" android:textStyle="bold" />
+        <CheckBox android:id="@+id/commentsCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Comentarios" android:checked="true" android:textColor="#eeeeee" />
+        <CheckBox android:id="@+id/giftsCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Regalos" android:checked="true" android:textColor="#eeeeee" />
+        <CheckBox android:id="@+id/likesCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Likes (agrupados)" android:checked="false" android:textColor="#eeeeee" />
+        <CheckBox android:id="@+id/followsCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nuevos seguidores" android:checked="true" android:textColor="#eeeeee" />
+        <CheckBox android:id="@+id/sharesCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compartidos" android:checked="false" android:textColor="#eeeeee" />
+        <CheckBox android:id="@+id/joinsCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entradas al directo (si están disponibles)" android:checked="false" android:textColor="#eeeeee" />
+        <Button android:id="@+id/testVoiceButton" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="16dp" android:text="PROBAR VOZ" />
+        <Button android:id="@+id/startButton" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="8dp" android:text="INICIAR SERVICIO DE VOZ" />
+        <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:padding="14dp" android:background="#1b1b1b"
+            android:text="Estado: listo para probar la voz" android:textColor="#ffb4b4" android:textSize="14sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp" android:text="Importante: esta versión base incluye selector, controles y voz del teléfono. La conexión real a eventos LIVE de TikTok/YouTube y el envío de audio a OBS requieren integrar y probar las APIs/conexiones correspondientes." android:textColor="#999999" android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

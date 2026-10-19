@@ -1,0 +1,17 @@
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.moorty.voice"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.moorty.voice"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "0.1.0"
+    }
+}
